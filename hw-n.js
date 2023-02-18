@@ -19,14 +19,14 @@ alert(result);
 //задание 6
 a=9;
 b=2
-let residue=a/b;
+let residue=a%b;
 alert(residue);
 //задание 7
 let num = 1;
-num = num + 5;
-num = num - 3;
-num = num * 7;
-num = num / 3;
+num += 5;
+num -= 3;
+num *= 7;
+num /= 3;
 num = num++;
 num = num--;
 alert(num);
@@ -39,9 +39,10 @@ let user=
 FirstName:"Alex",
 age:14,
 IsAdmin: Boolean(false),
-city:"city of residence"
+
 
 };
+user["any string key"]="city of residence"
 user.age=20;
 delete user.city;
 let infi=prompt("Какую информацию котите узнать о польззователе?", "name")
