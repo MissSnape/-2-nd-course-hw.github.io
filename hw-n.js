@@ -1,52 +1,98 @@
 //задание 1
-let a=10;
-alert(a);
-a=20;
-alert(a);
+let password='пароль';
+let entry=prompt('Введите пароль:');
+if (password==entry) {
+    alert('Пароль введен верно');
+
+} else {
+    alert('Пароль введен неправильно');
+}
 //задание 2
-let year=2007;
-alert(year);
+let c=prompt('Введите число:');
+if (c>0 && c<10) {
+    console.log("Верно");
+} else {
+    console.log("Неверно")
+}
 //задание 3
-let name="Брендан Эйх";
-alert(name);
+let d=prompt('Введите число:');
+let e=prompt('Введите число:');
+if (100<e || 100<d) {
+    console.log("Верно")
+} else {
+    console.log("Неверно")
+}
 //задание 4
-let b=10;
-let c=2;
-alert(b+c);
+let a = '2';
+a = Number(a);
+let b = '3';
+b = Number(b);
+alert(a + b);
+
 //задание 5
-let result=Math.pow(2,5)
-alert(result);
-//задание 6
-a=9;
-b=2
-let residue=a%b;
-alert(residue);
+let month=prompt('Введите месяц');
+switch(month){
+    case '1':
+        console.log("Это зимний месяц");
+    break;
+    case "2":
+        console.log("Это зимний месяц");
+    break;
+    case "3":
+        console.log("Это весений месяц");
+    break;
+    case "4":
+        console.log("Это весений месяц");
+    break;
+    case "5":
+        console.log("Это весений месяц");
+    break;
+    case "6":
+        console.log("Это летний месяц");
+    break;
+    case "7":
+        console.log("Это летний месяц");
+    break;
+    case "8":
+        console.log("Это летний месяц");
+    break;
+    case "9":
+        console.log("Это осенний месяц");
+    break;
+    case "10":
+        console.log("Это осенний месяц");
+    break;
+    case "11":
+        console.log("Это осенний месяц");
+    break;
+    case '12':
+        console.log("Это зимний месяц");
+    break;
+    default:
+        console.log('Такого месяца не существует');
+    break;
+}
 //задание 7
-let num = 1;
-num += 5;
-num -= 3;
-num *= 7;
-num /= 3;
-num = num++;
-num = num--;
-alert(num);
+let p=prompt("Пожалуйста, введите любое число");
+console.log(isNaN(p));
+    if (p % 2 == 0) {
+        alert('Число четное');
+     } else {
+         alert('Число нечетное');
+     }
+
+
 //задание 8
-let age=prompt("Сколько вам лет?");
-alert(age);
-// задание 9
-let user=
-{
-FirstName:"Alex",
-age:14,
-IsAdmin: Boolean(false),
-
-
-};
-user["any string key"]="city of residence"
-user.age=20;
-delete user.city;
-let infi=prompt("Какую информацию котите узнать о польззователе?", "name")
-alert(user.FirstName);
-//задание 10
-let Name=prompt("Как к вам обращаться?");
-alert("Привет, "+Name+"!");
+let clientOS=prompt('Введите число');
+switch(clientOS){
+case "1":
+    console.log("Установите версию приложения для Android по ссылке");
+break;
+case '0':
+    console.log("Установите версию приложения для iOS по ссылке");
+break;
+default:
+    console.log('Вы используете пк');
+break;
+}
+//задание 9
